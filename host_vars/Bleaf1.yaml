@@ -18,7 +18,7 @@ sonic_vlans:
   - vlan_id: 901
   - vlan_id: 902
   - vlan_id: 991
-  - vlan_id: 993
+   - vlan_id: 993
 
 sonic_vlans_interfaces:
   - name: Portchannel1
