@@ -1,0 +1,12 @@
+Bleaf1 ansible_host=172.16.100.36
+
+[Leaves]
+
+[Borders]
+Bleaf1
+
+
+[sonic:children]
+Leaves
+Borders
+
