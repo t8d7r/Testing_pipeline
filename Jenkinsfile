@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent Node-test
     stages {
         stage('test_syntax') {
             steps {
