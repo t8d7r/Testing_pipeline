@@ -8,7 +8,9 @@ pipeline {
         } 
 	stage('test_network_readiness') {
             steps {
-                sh 'python3.8 tests/test_hosts_up.py'
+		withPythonEnv('test') {
+		    sh 'python3.8 --version'
+		}			
             }
         }
  
