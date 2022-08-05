@@ -8,7 +8,7 @@ pipeline {
         } 
 	stage('test_network_readiness') {
             steps {
-		withPythonEnv('test') {
+		withPythonEnv('/home/thomasd/Suzie-Q/suzie-q') {
 		    sh 'python3.8 --version'
 		}			
             }
