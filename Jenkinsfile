@@ -1,5 +1,10 @@
 pipeline {
-    agent Node-test
+    agent {
+    	node {
+        	label 'jenkins'
+        	customWorkspace '/home/thomasd/Jenkins/Testing_pipeline'
+    	}
+    }  
     stages {
         stage('test_syntax') {
             steps {
